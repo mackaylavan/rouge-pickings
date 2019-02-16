@@ -1,48 +1,33 @@
-@font-face{
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
-}
-
+/** PHONE **/ 
 html{
 	font-size: 16px; 
 }
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1em; 
+	font-size:1em;
 }
 
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
-	display: flex; 
-	justify-content: center;
-	align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4 {
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+
+h2{
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 1.5em;
 }
-h1 {
-	font-size: 1.875em;
-}
-h2 {
-    font-size: 1.5em;
-}
-h3 {
-	font-size: 1.125em;
-}
-h4 {
-	font-size: 0.75em;
-}
+
+
+
 
 p {
 	font-size: 0.875em;
@@ -50,18 +35,20 @@ p {
     padding: 0 30px;
 }
 
+/** HEADER **/
 /*The widths are in a percentage!*/
 header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 header h1 {
-	float: left;
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size:1.875em;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -70,7 +57,7 @@ header h1 span {
 }
 
 header nav {
-	float: right;
+	text-align: center;
 	padding: 46px 0;
 }
 header nav ul {
@@ -81,20 +68,167 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 5px 20px 5px 0px;
+	display:block;
+	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	padding: 10;
+}
+
+/** TOP SECTION **/
+/*The widths are in a percentage!*/
+
+.top-section {
+	margin:50px;
+
+}
+
+.main-image {
+	padding-top:200px;
+	height: auto;
+	clear: both;
+
+	
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+
+.main-title h3 {
+	font-size:1.125em;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: left;
+	padding: 30px 0px 10px 0px;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+/** BOTTON SECTION **/ 
+
+.bottom-section {
+	margin: 50px;
+	clear: both;
+}
+
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	color: black;
+	font-size:0.75em;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+
+.section-two h4,
+.section-three h4 {
+	font-size:0.75em;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 0px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 16px;
+	line-height: 24px;
 }
 
 /*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
+}
+
+@media (min-width:768px){
+
+}
+
+@media (min-width:960px){
+	header {
+		height: 110px;
+		border-bottom: 3px solid #77a466;
+		margin: 0 auto;
+	}
+	
+	header h1 {
+		float: left;
+		margin: 0;
+		padding: 38px 0;
+	}
+	header h1 span {
+		color: #77a466;
+	}
+	
+	header nav {
+		float: right;
+		padding: 46px 0;
+	}
+	header nav ul {
+	
+		margin: 0;
+		padding: 0;
+	}
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		padding: 0 10px;
+		display: inline;
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+	}
+
+	/*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: 0 auto;
 	clear: both;
 }
@@ -119,8 +253,8 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 1em;
-	line-height: 1.5625em;
+	font-size: 16px;
+	line-height: 25px;
 }
 
 .section-one,
@@ -157,20 +291,17 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 1em;
-	line-height: 1.3125em;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .address {
-	font-size: 1em;
-	line-height: 1.5em;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -181,5 +312,8 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 0.875;
+	font-size: 14px;
+}
+
+
 }
